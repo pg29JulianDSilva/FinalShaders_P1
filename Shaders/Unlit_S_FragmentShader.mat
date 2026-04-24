@@ -35,22 +35,22 @@ Material:
     m_Floats:
     - _BandThreshold1: 0.3
     - _BandThreshold2: 0.6
-    - _DissolveAmount: 0.201
-    - _EdgeEmission: 5
-    - _EdgeWidth: 0.116
+    - _DissolveAmount: 0.08
+    - _EdgeEmission: 2.95
+    - _EdgeWidth: 0.109
     - _OutlineWidth: 0.05
     - _RimPower: 3
     - _RimStrength: 0.5
-    - _Speed1: 46.2
-    - _Speed2: 17.2
-    - _Speed3: 25.9
+    - _Speed1: 57.7
+    - _Speed2: 68.2
+    - _Speed3: 36.6
     m_Colors:
     - _AmbientColor: {r: 0.09999997, g: 0.09999997, b: 0.19999996, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EdgeColor: {r: 1, g: 0.39999998, b: 0, a: 1}
-    - _EdgeColor1: {r: 1, g: 0.07834018, b: 0, a: 1}
-    - _EdgeColor2: {r: 0, g: 0.4339623, b: 0.06329079, a: 1}
-    - _EdgeColor3: {r: 1, g: 1, b: 1, a: 1}
+    - _EdgeColor1: {r: 0, g: 0.6301887, b: 0.04110008, a: 1}
+    - _EdgeColor2: {r: 0, g: 0.16879904, b: 0.5622641, a: 1}
+    - _EdgeColor3: {r: 0.2830189, g: 0, b: 0, a: 1}
     - _HighlightColor: {r: 1, g: 1, b: 1, a: 1}
     - _MainColor: {r: 0.7433963, g: 0, b: 0, a: 0}
     - _MidColor: {r: 0.6, g: 0.6, b: 0.7, a: 1}

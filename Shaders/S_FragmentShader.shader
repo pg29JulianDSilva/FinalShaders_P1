@@ -74,7 +74,7 @@ Shader "Unlit/S_FragmentShader"
                 fixed4 col = tex2D(_MainTex, i.uv);
                 float noiseVal = tex2D(_NoiseTex, i.uvNoise).r * _Time.x;
 
-                //Bassically we overlapped the fragments, which it will decide which vertex will have which type of fragments
+                //overlapped the fragments, which it will decide which vertex will have which type of fragments
                 float dissolveThreshold = ((noiseVal - _DissolveAmount) * (1.0 + _EdgeWidth)) + _EdgeWidth;
                 //for the edge
                 float edgeFactor = 1.0 - smoothstep(0.0, _EdgeWidth, dissolveThreshold * 2);
@@ -136,10 +136,10 @@ Shader "Unlit/S_FragmentShader"
                 fixed4 col = tex2D(_MainTex, i.uv);
                 float noiseVal = tex2D(_NoiseTex, i.uvNoise).r;
 
-                //Bassically we overlapped the fragments, which it will decide which vertex will have which type of fragments
-                float dissolveThreshold = (((noiseVal - _DissolveAmount) * (1.0 + _EdgeWidth)) + _EdgeWidth);
+                //overlapped the fragments, which it will decide which vertex will have which type of fragments
+                float dissolveThreshold = (((noiseVal - _DissolveAmount) * (1.0 + _EdgeWidth)) + _EdgeWidth) * -1;
                 //for the edge
-                float edgeFactor = 1.0 - smoothstep(0.0, _EdgeWidth, dissolveThreshold);
+                float edgeFactor = 1.0 - smoothstep(0.10, _EdgeWidth, dissolveThreshold);
                 float4 edgeColor = _EdgeColor2 * cos(_DissolveAmount * _Time.y * _Speed2 * 2);
                 clip(dissolveThreshold / 2);
                 float4 finalColor = lerp(col, edgeColor, edgeFactor);
@@ -198,10 +198,10 @@ Shader "Unlit/S_FragmentShader"
                 fixed4 col = tex2D(_MainTex, i.uv);
                 float noiseVal = tex2D(_NoiseTex, i.uvNoise).r;
 
-                //Bassically we overlapped the fragments, which it will decide which vertex will have which type of fragments
+                //overlapped the fragments, which it will decide which vertex will have which type of fragments
                 float dissolveThreshold = ((noiseVal - _DissolveAmount) * (1.0 + _EdgeWidth)) + _EdgeWidth;
                 //for the edge
-                float edgeFactor = 1.0 - smoothstep(0.0, _EdgeWidth, dissolveThreshold);
+                float edgeFactor = 1.0 - smoothstep(0.20, _EdgeWidth, dissolveThreshold);
                 float4 edgeColor = _EdgeColor3 * cos(_DissolveAmount * _Time.y * _Speed3);
                 float4 finalColor = lerp(col, edgeColor, edgeFactor);
 
