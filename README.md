@@ -12,8 +12,10 @@ Part 2 with different pipeline here:
   Interractable shaders -> A shader that srhinks once is picked (USE SPACEBAR TO ITNERACT)
   Terrain Shader -> A shader that creates an unregular and scrappy contrast material, perfect for enviroments like caves or mountains.
   Post production effect -> Probe volume override which emulates looks from old security cameras look.
+  Create demonstration -> Extra section when all the others shaders from this part combines into one (Access this one with F4 and use supr to interact with the second object)
 
 Link for the part 2:
-https://github.com/pg29JulianDSilva/FinalShaders_P2.git
+https://github.com/pg29JulianDSilva/FinalShadersP3-Don-tAskAboutP2-
+https://github.com/pg29JulianDSilva/FinalShadersP3-Don-tAskAboutP2-.git
 
 PG29 Julian D Silva
